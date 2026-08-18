@@ -1,0 +1,6 @@
+node_modules/
+backend/node_modules/
+backend/.env
+backend/data/user_profile.json
+backend/data/conversations/*.json
+!backend/data/conversations/.gitkeep
