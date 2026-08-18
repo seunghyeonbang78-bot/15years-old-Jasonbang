@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+}
+
+main {
+  width: min(700px, 100%);
+  min-height: 100vh;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  background: white;
+}
+
+#messages {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow-y: auto;
+}
+
+.message {
+  max-width: 80%;
+  margin: 0;
+  padding: 10px 12px;
+  border-radius: 12px;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.user {
+  align-self: flex-end;
+  background: #dbeafe;
+}
+
+.assistant {
+  align-self: flex-start;
+  background: #eeeeee;
+}
+
+form {
+  display: flex;
+  gap: 8px;
+  padding: 12px;
+  border-top: 1px solid #dddddd;
+}
+
+input {
+  flex: 1;
+  min-width: 0;
+  padding: 10px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 16px;
+}
